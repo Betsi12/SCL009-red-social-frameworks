@@ -4,16 +4,16 @@ class Profile extends React.Component{
     constructor(){
         super();
 
-        //this.state = {
+        this.state = {
 
         }
     }
 
-    render()
+    render(){
         return(
             <div></div>
         )
     }
-
+}
 
 export default Profile; 
