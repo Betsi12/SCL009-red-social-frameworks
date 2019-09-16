@@ -3,29 +3,12 @@
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Entrega](#7-entrega)
-* [8. Pistas, tips y lecturas complementarias](#9-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#10-checklist)
 
 ***
 
 ## 1. Preámbulo
 
-[React](https://reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/)
-son algunos de los _frameworks_ y _librerías_ de JavaScript más utilizados por
-lxs desarrolladorxs alrededor del mundo, y hay una razón para eso.
-En el contexto del navegador, [_mantener la interfaz sincronizada con el estado
-es difícil_](https://medium.com/dailyjs/the-deepest-reason-why-modern-javascript-frameworks-exist-933b86ebc445).
-Al elegir un _framework_ o _librería_ para nuestra interfaz, nos apoyamos en una
-serie de convenciones e implementaciones _probadas_ y _documentadas_ para
-resolver un problema común a toda interfaz web. Esto nos permite concentrarnos
-mejor (dedicar más tiempo) en las caractrísticas _específicas_ de
-nuestra aplicación.
+[React](https://reactjs.org/)
 
 Cuando elegimos una de estas tecnologías no solo importamos un pedacito de
 código para reusarlo (lo cuál es un gran valor per se), si no que adoptamos una
@@ -54,29 +37,7 @@ incluyendo la parte de Hacker Edition pero excluyendo la parte de UX.
 
 ## 3. Objetivos de aprendizaje
 
-El objetivo principal de aprendizaje es familiarizarse con el desarrollo web
-usando el _framework_ o _librería_ elegido, y todo lo que ello conlleva:
-**documentación**, **arquitectura**, **principios de diseño**, **paradigma**,
-**abstracciones**, **vocabulario**, **herramientas**, **comunidad**, ...
 
-Por otro lado, tener que _re-escribir_ un programa es una experiencia de
-aprendizaje muy valiosa en sí misma, llevándonos a re-evaluar e iterar sobre
-un producto o prototipo. Dada la velocidad a la que evoluciona la tecnología
-web, es muy común tener que enfrentarse a este tipo de escenario donde decidimos
-(o alguien decide por nosotros) que lo mejor para seguir evolucionando una
-aplicación es re-escribirla usando una nueva tecnología.
-
-## 4. Consideraciones generales
-
-Este proyecto se debe "resolver" en duplas.
-
-Discutan y pónganse de acuerdo sobre cuál de los proyectos van a hacer desde cero.
-Si no se pueden poner de acuerdo en 10 minutos, [aquí hay algo que puede ayudar](https://justflipacoin.com/)
-
-Investiguen un poco sobre estas tres herramientas propuestas (React, Angular y
-Vue) y elijan con cuál quieren trabajar.
-
-Para comenzar tendrás que hacer un _fork_ y _clonar_ este repositorio.
 
 ## 5. Criterios de aceptación mínimos del proyecto
 
@@ -86,11 +47,7 @@ Ver [03-social-network](https://github.com/Laboratoria/curricula-js/tree/v2.x/pr
 
 Ver [03-social-network](https://github.com/Laboratoria/curricula-js/tree/v2.x/projects/03-social-network#hacker-edition).
 
-## 7. Entrega
 
-El proyecto será _entregado_ subiendo tu código a GitHub (`commit`/`push`) y la
-interfaz será desplegada usando GitHub pages u otro servicio de hosting que
-puedas haber encontrado en el camino.
 
 ## 8. Pistas, tips y lecturas complementarias
 
@@ -116,23 +73,6 @@ No dejes de explorar la documentación oficial de cada herramienta:
 * [create-react-app](https://github.com/facebook/create-react-app)
 * [React js en español - tutorial básico, primeros pasos y ejemplos - frontendlabs.io](https://frontendlabs.io/3158--react-js-espanol-tutorial-basico-primeros-pasos-ejemplos)
 
-### Angular
-
-* [Angular - docs oficiales](https://angular.io/)
-* [Angular CLI](https://cli.angular.io/)
-* [Angular - tutorial](https://www.youtube.com/watch?v=0eWrpsCLMJQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ)
-* [Angular - crud](https://www.youtube.com/watch?v=6wVolJfXn1c)
-* [Angular - redux](https://www.youtube.com/playlist?list=PLCKuOXG0bPi3FtoplJe0JOpiV6OyK30wd)
-
-### Vue
-
-* [Vue - docs oficiales](https://vuejs.org/)
-* [Vue CLI](https://cli.vuejs.org/)
-* [Vue- adicional](https://scotch.io/search?q=vue)
-* [Vue- school](https://vueschool.io/)
-
-Independientemente de si eliges React, Vue o Angular, todos estas herramientes
-se usan muchas veces en conjunción con Redux como manejador de _estado_.
 
 * [Redux - docs oficiales](https://redux.js.org/)
 
