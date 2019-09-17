@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://github.com/Betsi12/SCL009-red-social-frameworks.git",
   "dependencies": {
+    "firebase": "^6.6.1",
     "gh-pages": "^2.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -32,5 +33,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "* [1. Preámbulo](#1-preámbulo)",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Betsi12/SCL009-red-social-frameworks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Betsi12/SCL009-red-social-frameworks/issues"
   }
 }

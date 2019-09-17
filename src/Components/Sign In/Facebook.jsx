@@ -27,4 +27,4 @@ class LoginWithFacebook extends React.Component{
     }
 }
 
-export default LoginWithFacebook;
+export default LoginWithFacebook; 

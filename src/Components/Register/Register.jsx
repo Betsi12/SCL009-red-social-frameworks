@@ -34,9 +34,9 @@ class Register extends React.Component{
     render(){
         return(
             <div>
-                <img src="https://fotos.subefotos.com/bf6de30544c23d1df2aad093e5688c92o.png" alt="..." className="img-fluid img col-md-4 col-sm-4" />
+                <img src="https://thumbs.subefotos.com/eb472fc4d831422ee1ba4373ab4f6184o.jpg" alt="..." className="img-fluid img col-md-4 col-sm-4" />
                 <form className="style col-md-10 ">
-                <div className="form-row">
+                    <div className="form-row">
                         <div className="col-md-11 mb-3">
                             <label for="name">Nombre completo</label>
                             <input type="text" onChange={this.handleChange} className="form-control input" id="name" placeholder="Nombre" required/>
@@ -68,9 +68,9 @@ class Register extends React.Component{
                     <button className="btn btn-primary position col-lg-11 col-sm-11 inline" type="submit" onClick={this.loginWithEmailAndPassword}>Registrarme</button>
                 </form>
             </div>
-
-        )
+            )
+        }
     }
-}
-export default Register
-               
+    export default Register
+
+                

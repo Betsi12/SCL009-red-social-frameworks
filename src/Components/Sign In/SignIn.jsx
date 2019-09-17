@@ -1,10 +1,9 @@
-import React from "react";
 import "../Styles/Register.css";
 import Image from "../Images/Password.png";
 import Email from "../Images/correo.png";
+import firebase from "../Firebase/InicializacionFirebase";
 import Google from "./Google";
 import Facebook from "./Facebook";
-import firebase from "../Firebase/InicializacionFirebase";
 
 class SignIn extends React.Component{
     constructor(){
@@ -30,8 +29,9 @@ class SignIn extends React.Component{
     }
     render(){
         return(
-            <div >
-                <img src="https://fotos.subefotos.com/bf6de30544c23d1df2aad093e5688c92o.png" alt="..." className="img-fluid img col-md-4 col-sm-4" />
+            <div>
+
+                <img src="https://thumbs.subefotos.com/eb472fc4d831422ee1ba4373ab4f6184o.jpg" alt="..." className="img-fluid img col-md-4 col-sm-4" />
                 <form className="style col-md-8 " >
                 <div className="form-row">
                         <div className="col-md-12 mb-3 sm-3">
@@ -85,4 +85,3 @@ class SignIn extends React.Component{
     }
 }
 export default SignIn;
-                
