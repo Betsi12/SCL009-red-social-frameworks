@@ -1,4 +1,4 @@
-// LOGIC FOR SESSION HANDLING
+// LOGIN PARA MANEJO DE LA SESIÓN
 import React from 'react';
 import AuthUserContext from './context';
 import { withFirebase } from '../Firebase';
@@ -8,21 +8,21 @@ const withAuthentication = Component => {
       super(props);
       this.state = { authUser: null };
     }
-    // Listens for authenticated user with onAuthStateChanged from Firebase
-    // onAuthStateChanged receives a function as parameter that has access to the authenticated user
-    // & the passed function is called every time something changes for the authenticated user
+    // Escucha a usuarios autenticados con onAuthStateChanged de Firebase
+    // onAuthStateChanged recibe una función como parámetro que tiene acceso al usuario autenticado
+    // & la función aprobada se llama cada vez que algo cambia para el usuario autenticado
     componentDidMount() {
       this.listener = this.props.firebase.auth.onAuthStateChanged(
         authUser => {
           authUser
             ? this.setState({ authUser })
             : this.setState({ authUser: null });
-          // If a user signs out, the authUser object becomes null
-          // so the authUser property in the local state is set to null
+          // Si un usuario cierra sesión, el objeto authUser se vuelve nulo
+          // por lo que la propiedad authUser en el estado local se establece en nulo
         },
       );
     }
-    // Removes listener if the component unmounts
+    // Elimina el oyente si el componente se desmonta
     componentWillUnmount() {
       this.listener();
     }
