@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { compose } from "recompose";
+import AuthUserContext from "./context";
 import { withFirebase } from "../Firebase";
 import * as ROUTES from "../../constants/routes";
 
@@ -12,7 +13,7 @@ const withAutohorization = condition => Component => {
     componentDidMount() {
       this.listener = this.props.firebase.auth.onAuthStateChanged(authUser => {
         if (!condition(authUser)) {
-          // condición () se ejecuta con el authUser
+          // condition() es ejecutada con el authUser
           this.props.history.push(ROUTES.SIGN_IN);
           // SI LA AUTORIZACIÓN FALLA,
           //por ejemplo porque el usuario autenticado es nulo,
@@ -26,7 +27,15 @@ const withAutohorization = condition => Component => {
     }
 
     render() {
-      return <Component {...this.props} />; // ----> Componente aprobado que debe protegerse
+      return (
+        // AuthUserContext shows the Passed Component (page) after the redirection happens
+        <AuthUserContext.Consumer>
+          {authUser =>
+            // ----> Passed Component (page) that should be protected
+            condition(authUser) ? <Component {...this.props} /> : null
+          }
+        </AuthUserContext.Consumer>
+      );
     }
   }
   return compose(
